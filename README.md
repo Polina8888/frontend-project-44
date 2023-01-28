@@ -4,3 +4,5 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/448428b1bd27af045bee/maintainability)](https://codeclimate.com/github/Polina8888/frontend-project-44/maintainability)
 
 [![brain-even demo](https://asciinema.org/a/551872.svg)](https://asciinema.org/a/551872)
+
+[![brain-even demo](https://asciinema.org/a/551872.svg)](https://asciinema.org/a/5cvi7k8ncTrobUtcpjIryOjay)
