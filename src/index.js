@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync';
 
 export const getPlayerAnswer = (question) => {
   console.log(`Question: ${question}`);
-  const playerAnswer = Number(readlineSync.question('Your answer: '));
+  const playerAnswer = readlineSync.question('Your answer: ');
   return playerAnswer;
 };
 

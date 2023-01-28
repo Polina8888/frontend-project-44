@@ -24,7 +24,7 @@ export default () => {
     const num2 = getRandomNumber();
     const operator = getRandomOperator();
     const question = `${num1} ${operator} ${num2}`;
-    const playerAnswer = getPlayerAnswer(question);
+    const playerAnswer = Number(getPlayerAnswer(question));
     const correctAnswer = getCorrectAnswer(num1, num2, operator);
     if (!checkingForCorrectAnswer(correctAnswer, playerAnswer, i, name)) break;
   }
