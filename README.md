@@ -10,3 +10,5 @@
 [![brain-gcd demo](https://asciinema.org/a/UOFzdfhNkd3dGJte0eWwYmldz.svg)](https://asciinema.org/a/UOFzdfhNkd3dGJte0eWwYmldz)
 
 [![brain-progression demo](https://asciinema.org/a/dx62OdBNINF8nH8RmyKQ4tcsm.svg)](https://asciinema.org/a/dx62OdBNINF8nH8RmyKQ4tcsm)
+
+[![brain-prime demo](https://asciinema.org/a/kstRuhaHoGUc3ctDQQF9BL29J.svg)](https://asciinema.org/a/kstRuhaHoGUc3ctDQQF9BL29J)
