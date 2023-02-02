@@ -5,6 +5,8 @@
 
 [![brain-even demo](https://asciinema.org/a/551872.svg)](https://asciinema.org/a/551872)
 
-[![brain-calc demo](https://asciinema.org/a/551872.svg)](https://asciinema.org/a/5cvi7k8ncTrobUtcpjIryOjay)
+[![brain-calc demo](https://asciinema.org/a/5cvi7k8ncTrobUtcpjIryOjay.svg)](https://asciinema.org/a/5cvi7k8ncTrobUtcpjIryOjay)
 
-[![brain-gcd demo](https://asciinema.org/a/551872.svg)](https://asciinema.org/a/UOFzdfhNkd3dGJte0eWwYmldz)
+[![brain-gcd demo](https://asciinema.org/a/UOFzdfhNkd3dGJte0eWwYmldz.svg)](https://asciinema.org/a/UOFzdfhNkd3dGJte0eWwYmldz)
+
+[![brain-progression demo](https://asciinema.org/a/dx62OdBNINF8nH8RmyKQ4tcsm.svg)](https://asciinema.org/a/dx62OdBNINF8nH8RmyKQ4tcsm)
