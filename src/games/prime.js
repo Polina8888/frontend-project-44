@@ -1,4 +1,4 @@
-import {getRandomNumber} from '../math.js';
+import { getRandomNumber } from '../math.js';
 import greeting from '../cli.js';
 import { checkingForCorrectAnswer, getPlayerAnswer } from '../index.js';
 
@@ -15,7 +15,7 @@ const checkForPrimeNumber = (num) => {
 export default () => {
   const name = greeting('Answer "yes" if given number is prime. Otherwise answer "no".');
   for (let i = 0; i < 3; i += 1) {
-    const num = getRandomNumber();
+    const num = getRandomNumber(2, 100);
     const playerAnswer = getPlayerAnswer(num);
     const correctAnswer = checkForPrimeNumber(num);
     if (!checkingForCorrectAnswer(correctAnswer, playerAnswer, i, name)) {

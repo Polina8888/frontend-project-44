@@ -1,5 +1,5 @@
 import greeting from '../cli.js';
-import getRandomNumber from '../math.js';
+import { getRandomNumber } from '../math.js';
 import { getPlayerAnswer, checkingForCorrectAnswer } from '../index.js';
 
 export default () => {
@@ -8,6 +8,8 @@ export default () => {
     const num = getRandomNumber();
     const playerAnswer = getPlayerAnswer(num);
     const correctAnswer = (num % 2 === 0) ? 'yes' : 'no';
-    if (!checkingForCorrectAnswer(correctAnswer, playerAnswer, i, name)) break;
+    if (!checkingForCorrectAnswer(correctAnswer, playerAnswer, i, name)) {
+      break;
+    }
   }
 };

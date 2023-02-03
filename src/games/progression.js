@@ -21,10 +21,10 @@ export default () => {
     const length = getRandomNumber(5, 10);
     const progression = getProgression(start, step, length);
     const hiddenElementIndex = getRandomIndex(progression);
-    const correctAnswer = String(progression[hiddenElementIndex]);
+    const correctAnswer = progression[hiddenElementIndex];
     progression[hiddenElementIndex] = '..';
     const question = progression.join(' ');
-    const playerAnswer = getPlayerAnswer(question);
+    const playerAnswer = Number(getPlayerAnswer(question));
     if (!checkingForCorrectAnswer(correctAnswer, playerAnswer, i, name)) {
       break;
     }

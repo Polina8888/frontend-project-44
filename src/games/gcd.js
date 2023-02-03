@@ -1,4 +1,4 @@
-import getRandomNumber from '../math.js';
+import { getRandomNumber } from '../math.js';
 import greeting from '../cli.js';
 import { checkingForCorrectAnswer, getPlayerAnswer } from '../index.js';
 

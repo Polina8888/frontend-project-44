@@ -1,4 +1,4 @@
-import getRandomNumber from '../math.js';
+import { getRandomNumber } from '../math.js';
 import greeting from '../cli.js';
 import { checkingForCorrectAnswer, getPlayerAnswer } from '../index.js';
 
@@ -26,6 +26,8 @@ export default () => {
     const question = `${num1} ${operator} ${num2}`;
     const playerAnswer = Number(getPlayerAnswer(question));
     const correctAnswer = getCorrectAnswer(num1, num2, operator);
-    if (!checkingForCorrectAnswer(correctAnswer, playerAnswer, i, name)) break;
+    if (!checkingForCorrectAnswer(correctAnswer, playerAnswer, i, name)) {
+      break;
+    }
   }
 };
