@@ -1,6 +1,5 @@
-import { getRandomNumber, getRandomIndex } from '../math.js';
-import { checkingForCorrectAnswer, getPlayerAnswer } from '../index.js';
-import greeting from '../cli.js';
+import getRandomNumber from '../math.js';
+import run from '../index.js';
 
 const description = 'What number is missing in the progression?';
 
@@ -12,21 +11,17 @@ const getProgression = (start, step, length) => {
 
   return progression;
 };
-export default () => {
-  const name = greeting(description);
 
-  for (let i = 0; i < 3; i += 1) {
-    const start = getRandomNumber(1, 10);
-    const step = getRandomNumber(2, 10);
-    const length = getRandomNumber(5, 10);
-    const progression = getProgression(start, step, length);
-    const hiddenElementIndex = getRandomIndex(progression);
-    const correctAnswer = progression[hiddenElementIndex];
-    progression[hiddenElementIndex] = '..';
-    const question = progression.join(' ');
-    const playerAnswer = Number(getPlayerAnswer(question));
-    if (!checkingForCorrectAnswer(correctAnswer, playerAnswer, i, name)) {
-      break;
-    }
-  }
+const generateRound = () => {
+  const start = getRandomNumber(1, 10);
+  const step = getRandomNumber(2, 10);
+  const length = getRandomNumber(5, 10);
+  const progression = getProgression(start, step, length);
+  const hiddenElementIndex = getRandomNumber(0, length - 1);
+  const correctAnswer = String(progression[hiddenElementIndex]);
+  progression[hiddenElementIndex] = '..';
+  const question = progression.join(' ');
+  return [question, correctAnswer];
 };
+
+export default () => run(generateRound, description);

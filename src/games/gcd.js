@@ -1,6 +1,5 @@
-import { getRandomNumber } from '../math.js';
-import greeting from '../cli.js';
-import { checkingForCorrectAnswer, getPlayerAnswer } from '../index.js';
+import getRandomNumber from '../math.js';
+import run from '../index.js';
 
 const getGcd = (num1, num2) => {
   let lowestNumber = 0;
@@ -18,16 +17,14 @@ const getGcd = (num1, num2) => {
   return getGcd(lowestNumber, diffNumber);
 };
 
-export default () => {
-  const name = greeting('Find the greatest common divisor of given numbers.');
-  for (let i = 0; i < 3; i += 1) {
-    const num1 = getRandomNumber();
-    const num2 = getRandomNumber();
-    const question = `${num1} ${num2}`;
-    const playerAnswer = Number(getPlayerAnswer(question));
-    const correctAnswer = getGcd(num1, num2);
-    if (!checkingForCorrectAnswer(correctAnswer, playerAnswer, i, name)) {
-      break;
-    }
-  }
+const description = 'Find the greatest common divisor of given numbers.';
+
+const generateRound = () => {
+  const num1 = getRandomNumber();
+  const num2 = getRandomNumber();
+  const question = `${num1} ${num2}`;
+  const correctAnswer = String(getGcd(num1, num2));
+  return [question, correctAnswer];
 };
+
+export default () => run(generateRound, description);
